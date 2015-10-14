@@ -152,7 +152,10 @@ function sm_wp_ajax_query_attachments() {
    *
    * @param array $query An array of query variables.
    */
-  $query['author'] = sm_get_authors();
+  // Don't restrict access for Administrators
+  if (!current_user_can('administrator')) {
+    $query['author'] = sm_get_authors();
+  }
   $query = apply_filters( 'ajax_query_attachments_args', $query );
   $query = new WP_Query( $query );
 
