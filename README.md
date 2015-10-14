@@ -4,17 +4,12 @@ Separate user's media by user or role. Compatible with [User Role Editor](https:
 
 Separate media by:
 
-**User**
-Users see their files and no one elses.
-
-**Role:  Union**
-Users must share at least one role to see each others uploads.
-
-**Role:  Loose Intersect**
-Users must share at least all of the current user's roles. 
-
-**Role:  Strict Intersect**
-Users must have exactly the same roles to see each others uploads. 
+Separation Method | Effect
+----------------- | ------
+**User** | Users see their files and no one elses.
+**Role:  Union** | Users must share at least one role to see each others uploads.
+**Role:  Loose Intersect** | Users must share at least all of the current user's roles. 
+**Role:  Strict Intersect** | Users must have exactly the same roles to see each others uploads. 
 
 ## How to Install
 
