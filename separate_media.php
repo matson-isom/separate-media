@@ -92,7 +92,7 @@ function sm_get_authors() {
       $users_with_only_my_roles = array();
       if ($separation_method == "role_strict_intersect") {
         foreach ($users_with_my_roles as $user) {
-          if (empty(array_diff($user->roles, $my_roles))) {
+          if (!array_diff($user->roles, $my_roles))) {
             $authors[] = $user->ID;
           }
         }
