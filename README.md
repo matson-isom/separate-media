@@ -6,10 +6,10 @@ Separate media by:
 
 Separation Method | Effect
 ----------------- | ------
-**User** | Users see their files and no one elses.
-**Role:  Union** | Users must share at least one role to see each others uploads.
-**Role:  Loose Intersect** | Users must share at least all of the current user's roles. 
-**Role:  Strict Intersect** | Users must have exactly the same roles to see each others uploads. 
+User | Users see their files and no one elses.
+Role:  Union | Users must share at least one role to see each others uploads.
+Role:  Loose Intersect | Users must share at least all of the current user's roles. 
+Role:  Strict Intersect | Users must have exactly the same roles to see each others uploads. 
 
 ## How to Install
 
