@@ -76,91 +76,92 @@ function sm_radio_field_0_render() {
 }
 
 function sm_settings_section_callback() {
-  echo '<table class="wp-list-table widefat fixed striped">'.
-    '<tbody>'.
-      '<tr>'.
-        '<th>'.__('User').'</th>'.
-        '<th>'.__('Role(s)').'</th>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('user_a').'</td>'.
-        '<td>'.__('Editor').'</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('user_b').'</td>'.
-        '<td>'.__('Editor, Author').'</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('user_c').'</td>'.
-        '<td>'.__('Editor, Author').'</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('user_d').'</td>'.
-        '<td>'.__('Editor, Author, Subscriber').'</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('user_e').'</td>'.
-        '<td>'.__('Subscriber').'</td>'.
-      '</tr>'.
-    '</tbody>'.
-  '</table>'.
-  '<br>'.
-  '<table class="wp-list-table widefat fixed striped">'.
-    '<tbody>'.
-      '<tr>'.
-        '<th>'.__('Separation Method').'</th>'.
-        '<th>'.__('Users Who Share Media').'</th>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('User').'</td>'.
-        '<td>'.
-          '<ul>'.
-            '<li><strong>'.__('user_a:').'</strong> '.__('user_a').'</li>'.
-            '<li><strong>'.__('user_b:').'</strong> '.__('user_b').'</li>'.
-            '<li><strong>'.__('user_c:').'</strong> '.__('user_c').'</li>'.
-            '<li><strong>'.__('user_d:').'</strong> '.__('user_d').'</li>'.
-            '<li><strong>'.__('user_e:').'</strong> '.__('user_e').'</li>'.
-          '</ul>'.
-        '</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('Role: Union').'</td>'.
-        '<td>'.
-          '<ul>'.
-            '<li><strong>'.__('user_a:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_b:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_c:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_d:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_e:').'</strong> '.__('user_d, user_e').'</li>'.
-          '</ul>'.
-        '</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('Role: Loose Intersect').'</td>'.
-        '<td>'.
-          '<ul>'.
-            '<li><strong>'.__('user_a:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_b:').'</strong> '.__('user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_c:').'</strong> '.__('user_b, user_c, user_d').'</li>'.
-            '<li><strong>'.__('user_d:').'</strong> '.__('user_d').'</li>'.
-            '<li><strong>'.__('user_e:').'</strong> '.__('user_d, user_e').'</li>'.
-          '</ul>'.
-        '</td>'.
-      '</tr>'.
-      '<tr>'.
-        '<td>'.__('Role: Strict Intersect').'</td>'.
-        '<td>'.
-          '<ul>'.
-            '<li><strong>'.__('user_a:').'</strong> '.__('user_a').'</li>'.
-            '<li><strong>'.__('user_b:').'</strong> '.__('user_b, user_c').'</li>'.
-            '<li><strong>'.__('user_c:').'</strong> '.__('user_b, user_c').'</li>'.
-            '<li><strong>'.__('user_d:').'</strong> '.__('user_d').'</li>'.
-            '<li><strong>'.__('user_e:').'</strong> '.__('user_e').'</li>'.
-          '</ul>'.
-        '</td>'.
-      '</tr>'.
-    '</tbody>'.
-  '</table>';
+  echo '<p>'.__('Compatible with').'<a href="https://wordpress.org/plugins/user-role-editor/">User Role Editor</a></p>'.
+    '<table class="wp-list-table widefat fixed striped">'.
+      '<tbody>'.
+        '<tr>'.
+          '<th>'.__('User').'</th>'.
+          '<th>'.__('Role(s)').'</th>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('user_a').'</td>'.
+          '<td>'.__('Editor').'</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('user_b').'</td>'.
+          '<td>'.__('Editor, Author').'</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('user_c').'</td>'.
+          '<td>'.__('Editor, Author').'</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('user_d').'</td>'.
+          '<td>'.__('Editor, Author, Subscriber').'</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('user_e').'</td>'.
+          '<td>'.__('Subscriber').'</td>'.
+        '</tr>'.
+      '</tbody>'.
+    '</table>'.
+    '<br>'.
+    '<table class="wp-list-table widefat fixed striped">'.
+      '<tbody>'.
+        '<tr>'.
+          '<th>'.__('Separation Method').'</th>'.
+          '<th>'.__('Users Who Share Media').'</th>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('User').'</td>'.
+          '<td>'.
+            '<ul>'.
+              '<li><strong>'.__('user_a:').'</strong> '.__('user_a').'</li>'.
+              '<li><strong>'.__('user_b:').'</strong> '.__('user_b').'</li>'.
+              '<li><strong>'.__('user_c:').'</strong> '.__('user_c').'</li>'.
+              '<li><strong>'.__('user_d:').'</strong> '.__('user_d').'</li>'.
+              '<li><strong>'.__('user_e:').'</strong> '.__('user_e').'</li>'.
+            '</ul>'.
+          '</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('Role: Union').'</td>'.
+          '<td>'.
+            '<ul>'.
+              '<li><strong>'.__('user_a:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_b:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_c:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_d:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_e:').'</strong> '.__('user_d, user_e').'</li>'.
+            '</ul>'.
+          '</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('Role: Loose Intersect').'</td>'.
+          '<td>'.
+            '<ul>'.
+              '<li><strong>'.__('user_a:').'</strong> '.__('user_a, user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_b:').'</strong> '.__('user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_c:').'</strong> '.__('user_b, user_c, user_d').'</li>'.
+              '<li><strong>'.__('user_d:').'</strong> '.__('user_d').'</li>'.
+              '<li><strong>'.__('user_e:').'</strong> '.__('user_d, user_e').'</li>'.
+            '</ul>'.
+          '</td>'.
+        '</tr>'.
+        '<tr>'.
+          '<td>'.__('Role: Strict Intersect').'</td>'.
+          '<td>'.
+            '<ul>'.
+              '<li><strong>'.__('user_a:').'</strong> '.__('user_a').'</li>'.
+              '<li><strong>'.__('user_b:').'</strong> '.__('user_b, user_c').'</li>'.
+              '<li><strong>'.__('user_c:').'</strong> '.__('user_b, user_c').'</li>'.
+              '<li><strong>'.__('user_d:').'</strong> '.__('user_d').'</li>'.
+              '<li><strong>'.__('user_e:').'</strong> '.__('user_e').'</li>'.
+            '</ul>'.
+          '</td>'.
+        '</tr>'.
+      '</tbody>'.
+    '</table>';
 }
 
 function sm_options_page() {
