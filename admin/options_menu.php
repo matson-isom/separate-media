@@ -76,7 +76,7 @@ function sm_radio_field_0_render() {
 }
 
 function sm_settings_section_callback() {
-  echo '<p>'.__('Compatible with').'<a href="https://wordpress.org/plugins/user-role-editor/">User Role Editor</a></p>'.
+  echo '<p>'.__('Compatible with').' <a href="https://wordpress.org/plugins/user-role-editor/">User Role Editor</a></p>'.
     '<table class="wp-list-table widefat fixed striped">'.
       '<tbody>'.
         '<tr>'.
