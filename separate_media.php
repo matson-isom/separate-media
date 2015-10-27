@@ -3,7 +3,7 @@
 Plugin Name:  Separate Media
 Plugin URI:   http://URI_Of_Page_Describing_Plugin_and_Updates
 Description:  Separate user's media by user or role.
-Version:      1.0.0
+Version:      1.0.1
 Author:       Matson & Isom Technology
 Author URI:   http://www.mitcs.com
 License:      GPL2

@@ -19,5 +19,7 @@ Role:  Strict Intersect | Users must have exactly the same roles to see each oth
 
 ## Changelog
 
+**1.0.1**
+* Bug Fix:  Remove all mention of help_tabs
 **1.0.0**
 * Initial release.
