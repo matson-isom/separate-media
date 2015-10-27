@@ -5,9 +5,6 @@ add_action('admin_init', 'sm_settings_init');
 
 function sm_add_admin_menu() {
   $option_page = add_options_page('Separate Media', 'Separate Media', 'manage_options', 'separate_media', 'sm_options_page');
-  if ($option_page) {
-    add_action('load-'.$option_page, 'sm_options_page_help_tabs');
-  }
 }
 
 function sm_settings_init() {
